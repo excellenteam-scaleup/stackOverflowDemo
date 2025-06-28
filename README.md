@@ -12,20 +12,19 @@ This program is designed for educational purposes to demonstrate:
 ## Compilation Instructions
 
 ### Method 1: Using Makefile (Recommended)
-\`\`\`bash
+```
 make unsafe
-\`\`\`
-
+```
 ### Method 2: Manual Compilation
-\`\`\`bash
+```
 g++ -g -O0 -fno-stack-protector -fno-stack-check -fno-fortify-source -z execstack -no-pie -fno-PIE -o stack_overflow stack_overflow.cpp
-\`\`\`
+```
 
 ### Method 3: Using the Script
-\`\`\`bash
+```
 chmod +x compile_and_run.sh
 ./compile_and_run.sh
-\`\`\`
+```
 
 ## Compiler Flags Explained
 
@@ -85,14 +84,14 @@ Do NOT use for malicious purposes!
 ## Compilation Comparison
 
 ### Unsafe (This Program):
-\`\`\`bash
+```
 g++ -fno-stack-protector -fno-stack-check -fno-fortify-source ...
-\`\`\`
+```
 
 ### Safe (Normal):
-\`\`\`bash
+```
 g++ -fstack-protector-strong -D_FORTIFY_SOURCE=2 ...
-\`\`\`
+```
 
 ## System Requirements
 
