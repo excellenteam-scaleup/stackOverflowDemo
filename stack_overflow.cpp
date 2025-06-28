@@ -50,9 +50,9 @@ void vulnerableFunction() {
 
 // Function to demonstrate stack smashing
 void stackSmashing() {
-    char buffer[50];
     int important_variable = 12345;
-    
+    char buffer[50];
+
     std::cout << "\nImportant variable before: " << important_variable << std::endl;
     std::cout << "Buffer address: " << std::hex << (void*)buffer << std::dec << std::endl;
     std::cout << "Important variable address: " << std::hex << (void*)&important_variable << std::dec << std::endl;
