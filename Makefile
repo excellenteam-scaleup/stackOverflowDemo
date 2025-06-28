@@ -7,7 +7,7 @@ SOURCE = stack_overflow.cpp
 # Flags to disable stack protection and other security features
 UNSAFE_FLAGS = -fno-stack-protector \
                -fno-stack-check \
-               -fno-fortify-source \
+#               -fno-fortify-source \
                -z execstack \
                -no-pie \
                -fno-PIE
